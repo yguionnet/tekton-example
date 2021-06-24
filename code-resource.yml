@@ -8,4 +8,4 @@ spec:
     - name: revision
       value: master
     - name: url
-      value: https://github.com/eazytrainingfr/simple-webapp-docker.git 
+      value: https://github.com/yguionnet/simple-webapp-docker.git
