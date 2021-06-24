@@ -11,9 +11,9 @@ Here we will only give you the command you need to run to setup a pipeline examp
 
     kubectl create secret docker-registry regcred \
                     --docker-server="https://index.docker.io/v1/" \
-                    --docker-username=dirane \
+                    --docker-username=yguionnet \
                     --docker-password="mypassword" \
-                    --docker-email=diranetafen@yahoo.com
+                    --docker-email=yannick.guionnet@guiodesv.fr
     
 ### Create service account that will used to pass secret to tekton
 
@@ -22,7 +22,7 @@ Here we will only give you the command you need to run to setup a pipeline examp
 ### Create ClusterRole and ClusterRolebinding for the service account
 
     kubectl create clusterrole simple-webapp-docker-role \
-               --verb=* \
+               --verb="*" \
                --resource=deployments,deployments.apps
     kubectl create clusterrolebinding simple-webapp-docker-binding \
              --clusterrole=simple-webapp-docker-role \
