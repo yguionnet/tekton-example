@@ -6,4 +6,4 @@ spec:
   type: image
   params:
     - name: url
-      value: docker.io/yguionnet/simple-webapp-docker:latest 
+      value: docker.io/ygu26/simple-webapp-docker
